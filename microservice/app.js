@@ -26,7 +26,7 @@ function getRandomColor() {
 function getRandomGrayScaleColor() {
   let value = Math.random() * 0xFF | 0,
       grayscale = (value << 16) | (value << 8) | value;
-  return '#' + grayscale.toString(16);
+  return '#' + grayscale.toString(18);
 }
 
 app.get('/hpa', function(request, response){
